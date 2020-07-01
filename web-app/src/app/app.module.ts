@@ -44,6 +44,7 @@ import { TopnavbarComponent } from './topnavbar/topnavbar.component';
 import { ProductComponent } from './product/product.component';
 import { HttpClientModule } from "@angular/common/http";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContollerComponent } from './contoller/contoller.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -85,7 +86,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TypographyComponent,
     WidgetsComponent,
     TopnavbarComponent,
-    ProductComponent
+    ProductComponent,
+    ContollerComponent
   ],
   imports: [
     BrowserModule,
