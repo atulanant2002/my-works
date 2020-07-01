@@ -1,0 +1,31 @@
+{"product":[{
+    "name": "Cortana",
+    "brand": "Microsoft",
+    "status": "active",
+    "quantity": 20,
+    "price": 5000,
+    "category_id": 1
+},
+{
+    "name": "Bixby",
+    "brand": "Samsung",
+    "status": "inactive",
+    "quantity": 0,
+    "price": 500,
+    "category_id": 1
+},{
+    "name": "Siri",
+    "brand": "Apple.Co",
+    "status": "active",
+    "quantity": 2000,
+    "price": 50000,
+    "category_id": 1
+}],
+"category":[{
+    "id": 1,
+    "name": "Software"
+},{
+    "id": 2,
+    "name": "Hardware"
+}]
+}

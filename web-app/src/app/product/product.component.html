@@ -1,0 +1,74 @@
+<label class="switch">
+    <input type="checkbox" id="switch" [(ngModel)]="prodShow">
+    
+</label> 
+<br><br>
+<div class="master-div" *ngIf="prodShow"> 
+<div class="row">
+    <div class="col-md-3 text-center" >
+        <h4>Product Name</h4>
+    </div>
+    <div class="col-md-3 text-center">
+        <h4>Brand Name</h4>
+    </div>
+    <div class="col-md-1 text-center">
+        <h4>Stock</h4>
+    </div>
+    <div class="col-md-2 text-center">
+        <h4>Category</h4>
+    </div>
+    <div class="col-md-1 text-center">
+        <h4>Status</h4>
+    </div>
+    <div class="col-md-2 text-center">
+        <h4>Action</h4>
+    </div>
+</div>
+    
+    <span *ngFor="let data of dataList.product" [attr.id]="data.name">
+    <div class="row">
+    <div class="col-md-3 text-center" >
+        <h4>{{data.name}}</h4>
+    </div>
+    <div class="col-md-3 text-center">
+        <h4>{{data.brand}}</h4>
+    </div>
+    <div class="col-md-1 text-center">
+        <h4>{{data.quantity}}</h4>
+    </div>
+    <div class="col-md-2 text-center">
+        <h4>{{data.category_id}}</h4>
+    </div>
+    <div class="col-md-1 text-center">
+        <h4>{{data.status}}</h4>
+    </div>
+    <div class="col-md-2 text-center">
+        <button type="button" class="btn btn-dark">save</button>
+        <button type="button" class="btn btn-danger" (click)="delElement(data.name)">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+    </div>
+    </div>
+    </span>
+</div>
+    <button class="btn btn-primary" (click)="delAllElements()">Delete All</button>
+    <button type="button" class="btn btn-danger" (click)="showForm()">Add</button>
+    <div *ngIf="tableShow" class="container">
+        <form class="form-group">
+            <label for="pname">Product name: </label>
+            <input type="text" [(ngModel)]="prod_name" id="pname" name="pname" > <br><br>
+            <label for="pname">Brand name: </label>
+            <input type="text" [(ngModel)]="brand_name" id="bname" name="bname"><br><br>
+            <label for="pname">Stock: </label>
+            <input type="text" [(ngModel)]="stock" id="stock" name="stock"><br><br>
+            <label for="pname">Category: </label>
+            <input type="text" [(ngModel)]="category" id="cat" name="cat"><br><br>
+            <label for="pname">Status: </label>
+            <input type="text" [(ngModel)]="status" id="status" name="status"><br><br>
+            <button type="submit" class="btn btn-secondary" (click)="addElement()">Submit</button>
+            <button type="reset" class="btn btn-dark">Reset</button>
+        </form>
+    </div>    
+
+
+
