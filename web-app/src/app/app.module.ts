@@ -45,6 +45,8 @@ import { ProductComponent } from './product/product.component';
 import { HttpClientModule } from "@angular/common/http";
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContollerComponent } from './contoller/contoller.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { SignupPageComponent } from './signup-page/signup-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -87,7 +89,9 @@ import { ContollerComponent } from './contoller/contoller.component';
     WidgetsComponent,
     TopnavbarComponent,
     ProductComponent,
-    ContollerComponent
+    ContollerComponent,
+    LoginPageComponent,
+    SignupPageComponent
   ],
   imports: [
     BrowserModule,

@@ -39,10 +39,14 @@ import { TablesDynamicComponent } from './tables-dynamic/tables-dynamic.componen
 import { TypographyComponent } from './typography/typography.component';
 import { WidgetsComponent } from './widgets/widgets.component';
 import { ProductComponent } from "./product/product.component";
+import { SignupPageComponent } from './signup-page/signup-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 const routes: Routes = [
   {path:'sidebar', component:SidebarComponent},
   {path:'calendar', component:CalendarComponent},
-  {path:'product', component:ProductComponent}
+  {path:'product', component:ProductComponent},
+  {path:'signup', component: SignupPageComponent},
+  {path:'login', component:LoginPageComponent}
 ];
 
 @NgModule({
